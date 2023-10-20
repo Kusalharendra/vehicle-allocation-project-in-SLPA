@@ -1,0 +1,42 @@
+mysql -h localhost -u root -p
+kusal1234
+
+create database Vehicle_db;
+
+use Vehicle_db; 
+
+create table Vehicle(					
+    	vehicle_no char(8) not null,
+	division_id int(2) not null references Division(division_id),
+   	vehicle_type char(100) not null,
+	vehicle_model char(100) not null,
+	manufactured_year int(4) not null,
+	registered_year int(4) not null,
+	fuel_type char(50) not null,
+	chassis_no char(100) not null,
+	engine_no char(100) not null,
+	current_status char(50) not null, 
+	primary key (vehicle_no)
+);
+
+create table Division(					
+	division_id int(2) not null auto_increment,
+   	admin_id char(5) not null references Admin(admin_id),
+	division_name char(200) not null, 
+	primary key (division_id)
+);
+
+create table Admin(					
+	admin_id char(5) not null,
+	admin_name char(200) not null,
+   	admin_contact_no char(10) not null,
+	admin_email char(50) not null,
+	primary key (admin_id)
+);
+
+create table service_details(
+	service_id char(10) not null auto_increment,
+	vehicle_no char(8) not null reference Vehicle(vehicle_no),
+	repaire_id char(10) not null reference Repaire(repaire_id),
+	
+);

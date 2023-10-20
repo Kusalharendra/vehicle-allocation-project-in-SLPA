@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Registration Form</title>
+    <link rel="stylesheet" href="DriverRegistrationForm.css">
+</head>
+<body>
+    
+    <div class="Main-Container">
+
+        <h2>Driver Registration</h2>
+
+        <form action="#">
+            <fieldset><legend>Personal Details</legend>
+                <div class="Input_Fields">
+
+                    <div class="Name-Fields">
+                        <p>First Name</p> <input type="text" name="first-name" placeholder="Enter your first name" required>
+                        <p>Middle Name</p> <input type="text" name="middle-name" placeholder="Enter your middle name">
+                        <p>Last Name</p> <input type="text" name="last-name" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="Container-1">
+                        <div class="Column-1">
+                            <div class="DOB-Field">
+                                <p>Date of Birth</p><input type="date" name="dob" required>
+                            </div>
+                
+                            <div class="Mobile-Num-Field">
+                                <p>Mobile Number</p><input type="text" name="mobile" required placeholder="Enter your mobile number">
+                            </div>
+        
+                            <div class="NIC-Field">
+                                <p>NIC Number</p><input type="text" name="nic" required placeholder="Enter your NIC number ">
+                            </div>
+        
+                            
+                        </div>
+    
+                        <div class="Column-2">
+
+                            <div class="Email-Field">
+                                <p>E-mail Address</p><input type="text" name="email" placeholder="Enter your e-mail">
+                            </div>
+                            <div class="Gender">
+                                <label for="Gender">Gender</label>
+                                <p><input type="radio" name="gender">Male</p>
+                                <p><input type="radio" name="gender">Female </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </fieldset>  
+            
+            <fieldset><legend>Identity Details</legend>
+                <div class="Input_Fields">
+
+                    <div class="Container-2">
+
+                        <div class="Column-3">
+                            <div class="Port-Id-Num">
+                                <p>Port ID Number</p><input type="text" name="portId" required placeholder="Enter your port id number ">
+                            </div>
+    
+                            <div class="Division">
+                                <p>Current Division</p><input type="text" name="division" required placeholder="Enter your current division ">
+                            </div>
+                        </div>
+                        
+                        <div class="Column-4">
+                            <div class="Driving-Licence">
+                                <p>Driving Licence Number</p><input type="text" name="drivingLicenceId" required placeholder="Enter your driving licence number ">
+                            </div>
+
+                            <div class="Driving-Licence-Issued-Date">
+                                <p>Driving Licence Issued Date</p><input type="date" name="drivingLicenceIssuedDate" required>
+                            </div>
+
+                            <div class="Driving-Licence-Expiry-Date">
+                                <p>Driving Licence Expiry Date</p><input type="date" name="drivingLicenceExpiryDate" required>
+                            </div>
+
+
+                        </div>
+                        
+
+                    </div>  
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+
+</body>
+</html>
