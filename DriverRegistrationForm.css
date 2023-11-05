@@ -11,11 +11,12 @@ body{
 }
 
 .Main-Container{
-    width: 700px;
-    height: 850px;
-    background: rgba(202, 177, 177, 0.8);
+    width: 95%;
+    height: 800px;
+    background: rgba(136, 151, 154, 0.8);
     color: #000000;
-    top: 70%;
+    top: 60%;
+    bottom: 60%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -29,6 +30,7 @@ h2{
     padding: 0 0 20px;
     text-align: center;
     font-size: 30px;
+    font-style: bold;
 }
 
 legend{
@@ -47,81 +49,71 @@ legend{
  }
 
  .DOB-Field input{
-    width: 70%;
+    width: 100%;
     margin-bottom: 20px;
  }
 
- .Mobile-Num-Field input{
-    width: 70%;
+.Mobile-Num-Field input{
+    width: 100%;
     margin-bottom: 20px;
- }
+}
 
- .NIC-Field input{
-    width: 70%;
+.Email-Field input{
+    width: 100%;
     margin-bottom: 20px;
- }
+}
 
- .Email-Field input{
-    width: 180%;
+.NIC-Field input{
+    width: 100%;
     margin-bottom: 20px;
- }
+}
 
  .Email-Field p{
     font-weight: bold;
  }
 
- .Container-1{
-    display: flex;
- }
-
- .Column-1{
-    width:50%;  
-}
-
-.Column-1 input{
-    margin-bottom: 20px;
-}
-
-label{
-    font-weight: bold;
-}
-
-.Gender p{
-    font-weight: normal;
-    font-size:medium;
-}
-
-.Container-2{
-    display: flex;
-}
-
-.Column-3{
-    width: 50%;
-}
-
 .Port-Id-Num input{
-    width: 70%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .Division input{
-    width: 70%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .Driving-Licence input{
-    width: 143%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .Driving-Licence-Issued-Date input{
-    width: 90%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Driving-Licence-Expiry-Date input{
+    width: 100%;
     margin-bottom: 20px;
 }
 
-.Driving-Licence-Expiry-Date input{
-    width: 90%;
+.CurrentAddress input{
+    width: 100%;
     margin-bottom: 20px;
 }
+
+.PermenantAddress input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.District input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.submitButton{
+    text-align: center;
+}
+
 
 
